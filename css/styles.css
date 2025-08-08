@@ -1,0 +1,159 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+
+
+.montserrat-h1 {
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 3rem; /* Tamaño del título */
+  color: #373540; /* Color del título */
+  text-align: center; /* Centra el título */
+  margin-bottom: 20px; /* Espacio debajo del título */
+  font-weight: bold; /* Hace el texto más grueso */
+}
+
+.navbar-brand img {
+  height: 80px; /* Ajusta la altura */
+  width: auto;  /* Mantiene la proporción */
+  border-radius: 5px;
+
+}
+
+.navbar-nav .nav-link, .navbar-brand {
+  color: #320dc5; /* Cambia el color del texto */
+  font-weight:normal ; /* Hace el texto más grueso */
+  text-align: right; /* Alinea el texto a la derecha */
+  
+}
+.navbar-nav .nav-link:hover, .navbar-brand .nav-link:hover {
+  color: white; /* Cambia el color del texto al pasar el mouse */
+  background-color: rgb(31, 87, 206);
+  border-radius: 4px; 
+}
+
+.container-img {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  padding: 20 px; /* Espacio alrededor del logo */
+ 
+}
+.container-nav {
+  display: flex;
+  justify-content: space-between; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  gap: 40px; /* Espacio entre los enlaces */
+  margin-left: 70px;
+  padding-left: 100px;
+}
+
+.container-btn{
+  display: -webkit-inline-flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  width: 50px;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+  padding: 20px; /* Espacio alrededor del botón */
+}
+
+.social-icon {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  .social-icon:hover {
+    color: #0d6efd; /* Azul Bootstrap */
+  }
+
+  .descripcion__titulo {
+    font-size: 1.4rem;
+    color: #333;
+    text-align: center;
+    margin-top: 10px;
+    max-width: 600px; /* Ancho máximo para el texto */
+    line-height: 1.5; 
+  }
+
+  .btn-contactar, .btn-download {
+    display: flex;
+    align-items: center; /* Centra verticalmente el icono y el texto */
+    justify-content: center; /* Centra horizontalmente */
+    width: 100%; 
+    max-width: 400px; /* Asegura que el botón ocupe todo el ancho disponible */
+  }
+
+  
+  .btn-download, .btn-contactar {
+    margin-left: 10px; /* Espacio entre el icono y el texto */
+  }
+
+  .titulo-disponible {
+    font-size: 1rem; /* Tamaño del texto */
+    color: #F5F5F5; /* Color del texto */
+    text-align: center; /* Centra el texto */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    border-radius: 5%;
+    background-color: #6c63ff;
+    display: inline-block; /* Permite aplicar padding y margin */
+    padding: 5px 10px; /* Espacio interno */
+  }
+
+  .titulo-pagina {
+    font-family: "Montserrat-Black", sans-serif; /* Fuente del título */
+    font-size: 4rem; /* Tamaño del título */
+    color: #373540; /* Color del título */
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Espacio debajo del título */
+    font-weight: bold; /* Hace el texto más grueso */
+  }
+
+  .card-hover {
+  background-color: #ffffff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px); /* se mueve hacia arriba */
+  background-color: #091117;   /* cambia de color */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2); /* sombra más intensa */
+  color: #bdbbde;
+}
+
+.img-habilidades{
+
+    width: 30%;
+    height: auto;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+
+.tecnologias{
+
+    background-color: #6C63FF;
+    display: flex;
+    color: white;
+    text-align: center;
+   font-size: 1.2rem;
+
+
+}
+
+.valores-color{
+    background-color: #6C63FF;
+    color: white;
+    border-radius: 2px;
+    margin: o auto;
+}
+
+
