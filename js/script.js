@@ -1,4 +1,3 @@
-// ----------------- GALERÍA DE PROYECTOS -----------------
 const proyectos = [
   {
     src: "img/ecommerce.png",
