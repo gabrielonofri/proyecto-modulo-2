@@ -35,40 +35,41 @@
 
 <section class="bg-primary-subtle p-2">
   <div class="container my-5">
-  <div class="row justify-content-center">
-  <div class="col-12 col-md-8 col-lg-6">
-      <h2 class="text-center mb-4 display-6">Contáctanos</h2>
-      <div class="card shadow p-4 rounded-4">
-        <form action="enviar-form" method="post">
-          <div class="mb-3">
-            <label for="name" class="form-label label-text">Nombre</label>
-            <input type="text" class="form-control" id="name" placeholder="ingrese su Nombre">
-          </div>
-           <div class="mb-3">
-            <label for="name" class="form-label label-text">Apellido</label>
-            <input type="text" class="form-control" id="name" placeholder="ingrese su Apellido">
-          </div>
-           <div class="mb-3">
-            <label for="name" class="form-label label-text">Teléfono</label>
-            <input type="text" class="form-control" id="name" placeholder="ingrese su Teléfono">
-          </div>
-          <div class="mb-3">
-            <label for="email" class="form-label label-text">Correo Electrónico</label>
-            <input type="email" class="form-control" id="email" placeholder="ingrese su Correo Electrónico" required>
-          </div>
-          <div class="mb-3">
-            <label for="message" class="form-label label-text">Mensaje</label>
-            <textarea class="form-control" id="message" rows="4" placeholder="ingrese su Mensaje"></textarea>
-          </div>
-          <div class="d-grid">
-            <button type="submit" class="btn btn-primary">Enviar</button>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-</div>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-8 col-lg-6">
+        <h2 class="text-center mb-4 display-6">Contáctanos</h2>
+        <div class="card shadow p-4 rounded-4">
+          <form id="contactForm">
+            <div class="mb-3">
+              <label for="nombre" class="form-label label-text">Nombre</label>
+              <input type="text" class="form-control" id="nombre" placeholder="Ingrese su Nombre">
+            </div>
+            <div class="mb-3">
+              <label for="apellido" class="form-label label-text">Apellido</label>
+              <input type="text" class="form-control" id="apellido" placeholder="Ingrese su Apellido">
+            </div>
+            <div class="mb-3">
+              <label for="telefono" class="form-label label-text">Teléfono</label>
+              <input type="text" class="form-control" id="telefono" placeholder="Ingrese su Teléfono">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label label-text">Correo Electrónico</label>
+              <input type="email" class="form-control" id="email" placeholder="Ingrese su Correo Electrónico" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label label-text">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="4" placeholder="Ingrese su Mensaje"></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+      
 </section>
+
+<section>
+
 
 
 <footer class="bg-dark text-white py-4 border-top border-secondary">
@@ -95,6 +96,9 @@
   </div>
   
 </footer>
- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="./js/script.js"></script>
 </body>
 </html>
