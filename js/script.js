@@ -1,3 +1,6 @@
+
+// GALERIA DE PROYECTOS
+
 const proyectos = [
   {
     src: "img/ecommerce.png",
@@ -6,8 +9,8 @@ const proyectos = [
   },
   {
     src: "img/gestortareas.png",
-    titulo: "Gestor de Tareas",
-    descripcion: "Aplicación web para la gestión de tareas con creación, edición y eliminación de tareas."
+    titulo: "App de Educacion Online",
+    descripcion: "plataforma web interactiva que permite a los estudiantes acceder a cursos en línea, materiales de estudio y evaluaciones. El objetivo es ofrecer un entorno de aprendizaje intuitivo, accesible y adaptable a diferentes dispositivos.."
   },
   {
     src: "img/portfolio.png",
@@ -37,7 +40,8 @@ function renderGaleriaProyectos() {
     thumb.className = "img-thumbnail";
     thumb.style.cursor = "pointer";
 
-    thumb.onclick = () => mostrarProyectoPrincipal(p, i);
+    // 🔹 Reemplazamos onclick por addEventListener
+    thumb.addEventListener("click", () => mostrarProyectoPrincipal(p, i));
 
     col.appendChild(thumb);
     galeriaMiniaturas.appendChild(col);
