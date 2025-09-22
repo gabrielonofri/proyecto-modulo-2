@@ -69,3 +69,49 @@ function mostrarProyectoPrincipal(proyecto, index) {
 renderGaleriaProyectos();
 
 
+// GESTOR LISTA DE TAREAS
+
+const inputTarea   = document.getElementById("nuevaTarea");
+const btnAgregar   = document.getElementById("agregarTarea");
+const listaTareas  = document.getElementById("listaTareas");
+
+
+if (btnAgregar) {
+  
+  
+  btnAgregar.addEventListener("click", () => {
+    const texto = inputTarea.value.trim();
+
+    if (texto !== "") {
+      
+      const li = document.createElement("li");
+      li.className = "list-group-item d-flex justify-content-between align-items-center";
+
+      li.innerHTML = `
+        <span>${texto}</span>
+        <div>
+          <button class="btn btn-sm btn-success me-2 completar">✔</button>
+          <button class="btn btn-sm btn-danger eliminar">✖</button>
+        </div>
+      `;
+
+      
+      listaTareas.appendChild(li);
+
+    
+      inputTarea.value = "";
+    }
+  });
+
+  listaTareas.addEventListener("click", (e) => {
+    
+    if (e.target.classList.contains("eliminar")) {
+      e.target.closest("li").remove();
+    }
+
+    
+    if (e.target.classList.contains("completar")) {
+      e.target.closest("li").classList.toggle("list-group-item-success");
+    }
+  });
+}
