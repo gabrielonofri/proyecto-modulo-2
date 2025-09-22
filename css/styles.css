@@ -4,6 +4,26 @@
     box-sizing: border-box; 
 }
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+:root {
+    --primary-color: #6f42c1;
+    --secondary-color: #20c997;
+    --accent-color: #fd7e14;
+    --dark-color: #1a1a1a;
+    --light-color: #f8f9fa;
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient-accent: linear-gradient(45deg, var(--primary-color), var(--secondary-color));
+    --shadow-light: 0 2px 10px rgba(0, 0, 0, 0.1);
+    --shadow-medium: 0 5px 20px rgba(0, 0, 0, 0.15);
+    --shadow-heavy: 0 10px 40px rgba(0, 0, 0, 0.2);
+}
+
 
 .montserrat-h1 {
   font-family: "Montserrat", sans-serif;
@@ -23,6 +43,115 @@
   border-radius: 5px;
 
 }
+
+
+.fondo {
+  min-height:85vh;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+  }
+
+.fondo-contacto {
+  min-height:85vh;
+  background:linear-gradient(135deg,#667eea,#764ba2);
+}
+
+.fondo-small {
+  min-height:30vh;
+  background:linear-gradient(135deg,#20c997,#0d6efd);
+}
+
+.fondo h1,.fondo-small h1 {
+  animation:slideIn 1s ease-out;
+}
+
+.hover-card{
+  transition:transform 0.3s,box-shadow 0.3s;
+}
+
+.hover-card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+@keyframes slideIn{
+  from{opacity:0;transform:translateY(30px);}to{opacity:1;transform:translateY(0);}
+}
+
+.animacion {
+  opacity:0;
+  animation:fadeIn 2s forwards;
+}
+
+@keyframes fadeIn{to{opacity:1;}}
+
+
+
+.skill-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-heavy);
+}
+
+.skill-icon {
+    margin-bottom: 1.5rem;
+}
+
+.skill-image {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.skill-progress {
+    background: #f0f0f0;
+    border-radius: 10px;
+    height: 8px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progress-bar {
+    background: var(--gradient-accent);
+    height: 100%;
+    border-radius: 10px;
+    position: relative;
+    transition: width 1s ease-out;
+}
+
+.progress-text {
+    position: absolute;
+    right: 10px;
+    top: -25px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+.soft-skill-card {
+    background: white;
+    border-radius: 20px;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: var(--shadow-light);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.soft-skill-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-heavy);
+}
+
 
 .navbar-nav .nav-link, .navbar-brand {
   color: #320dc5; 
@@ -67,20 +196,22 @@
     font-size: 1.5rem;
     transition: color 0.3s ease;
   }
-  .social-icon:hover {
+
+.social-icon:hover {
     color: #0d6efd; 
   }
 
-  .descripcion__titulo {
+
+.descripcion__titulo {
     font-size: 1.4rem;
-    color: #333;
+    color: #F5F5F5;;
     text-align: center;
     margin-top: 10px;
     max-width: 600px; 
     line-height: 1.5; 
   }
 
-  .btn-contactar, .btn-download {
+.btn-contactar, .btn-download {
     display: flex;
     align-items: center; 
     justify-content: center; 
@@ -89,31 +220,31 @@
   }
 
   
-  .btn-download, .btn-contactar {
+.btn-download, .btn-contactar {
     margin-left: 10px; 
   }
 
-  .titulo-disponible {
+.titulo-disponible {
     font-size: 1rem; 
     color: #F5F5F5; 
     text-align: center; 
     margin-bottom: 20px; 
     border-radius: 5%;
-    background-color: #6c63ff;
+    background-color: #cb0c98;
     display: inline-block; 
     padding: 5px 10px; 
   }
 
-  .titulo-pagina {
+.titulo-pagina {
     font-family: "Montserrat-Black", sans-serif; 
     font-size: 4rem; 
-    color: #373540; 
+    color: #F5F5F5; 
     text-align: center; 
     margin-bottom: 20px; 
     font-weight: bold; 
   }
 
-  .card-hover {
+.card-hover {
   background-color: #ffffff;
   border: 1px solid #ddd;
   padding: 20px;
@@ -138,7 +269,7 @@
     margin-top: 15px;
 }
 
-.tecnologias {
+/*.tecnologias {
       background-color: #6C63FF;
       color: white;
       font-size: 1.2rem;
@@ -146,7 +277,7 @@
       border-radius: 8px;
     }
 
-    .tecnologias ul {
+.tecnologias ul {
       list-style: none;
       padding: 0;
       margin: 0 auto;
@@ -154,7 +285,7 @@
       text-align: center;
     }
 
-    .tecnologias li {
+.tecnologias li {
       background-color: #FFBEE6;
       color: #212121;
       border-radius: 4px;
@@ -222,6 +353,6 @@ background-color: #FFC774;
 
 background-color: #FFBEE6;
 
-}
+}*/
 
 
